@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    background: url('images/banana.jpg') no-repeat center center/ cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container{
+    width: 100%;
+    padding: 20px 10px;
+    background: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 30px;
+
+    display: flex;
+}
+
+input {
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task{
+    font-size: 1.2rem;
+    padding: 5px;
+
+    background: whitesmoke;
+    color: darkgoldenrod;
+
+    border-radius: 8px;
+    border: pink solid 2px;
+}
+
+#add-task:hover{
+    background-color: palevioletred;
+    color: whitesmoke;
+}
