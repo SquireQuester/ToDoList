@@ -13,7 +13,7 @@ body{
     background: whitesmoke;
     border-radius: 8px;
     box-shadow: 0 0 30px;
-
+    margin-bottom: 20px;
     display: flex;
 }
 
@@ -39,4 +39,59 @@ input {
 #add-task:hover{
     background-color: palevioletred;
     color: whitesmoke;
+}
+
+
+/* Styling new Tasks */
+
+.task{
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 30px;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button{
+    flex: 1;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.task .checkTask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px pink;
+    font-size: 1.5rem;
+}
+
+.task .checkTask:hover{
+    background-color: orange;
+    color: whitesmoke;
+}
+
+.task .deleteTask{
+    color: darkred;
+    margin-right: 5px;
+    border: solid 2px red;
+    font-size: 1.3rem;
+}
+
+.task .deleteTask:hover{
+    color: whitesmoke;
+    background-color: darkred;
 }
