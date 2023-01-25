@@ -16,7 +16,7 @@ addTask.addEventListener('click', function(){
     task.appendChild(li);
 
     let checkButton = document.createElement("button");
-    checkButton.innerHTML = '<i class="fa-solid fa-plus"></i>';
+    checkButton.innerHTML = '<i class="fa-solid fa-check"></i>';
     checkButton.classList.add('checkTask');
     task.appendChild(checkButton);
 
@@ -32,5 +32,16 @@ addTask.addEventListener('click', function(){
     }
 
     inputTask.value = "";
+
+    checkButton.addEventListener('click', function(){
+        checkButton.parentElement.style.textDecoration = "line-through";
+    })
+
+    deleteButton.addEventListener('click', function(e){
+
+        let target = e.target;
+
+        target.parentElement.parentElement.remove();
+    })
 
 })
